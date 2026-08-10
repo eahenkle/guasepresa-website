@@ -1,0 +1,18 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
+export function useScrollPast(thresholdPx: number): boolean {
+  const [past, setPast] = useState(false);
+
+  useEffect(() => {
+    function onScroll() {
+      setPast(window.scrollY > thresholdPx);
+    }
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [thresholdPx]);
+
+  return past;
+}
