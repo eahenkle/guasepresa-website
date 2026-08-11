@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Barlow, Barlow_Condensed, IBM_Plex_Mono } from "next/font/google";
+import { ScrollShine } from "@/components/layout/scroll-shine";
 import "./globals.css";
 
 const barlow = Barlow({
@@ -83,6 +84,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <a className="skip-link" href="#main">
           Saltar al contenido
         </a>
+        <ScrollShine />
         {children}
       </body>
     </html>

@@ -1,7 +1,7 @@
 import { LucideIcon } from "lucide-react";
 import { BorderRotate } from "@/components/ui/animated-gradient-border";
 
-const BRAND_GRADIENT = { primary: "#1b5c3c", secondary: "#e0922c", accent: "#fbb75d" };
+const BRAND_GRADIENT = { primary: "#a65700", secondary: "#e0922c", accent: "#fbb75d" };
 
 interface ServiceCardProps {
   icon: LucideIcon;
@@ -15,7 +15,7 @@ export function ServiceCard({ icon: Icon, title, description }: ServiceCardProps
       className="card-lift"
       animationMode="rotate-on-hover"
       gradientColors={BRAND_GRADIENT}
-      backgroundColor="#edf1e7"
+      backgroundColor="#060907"
       borderWidth={1}
       borderRadius={3}
     >

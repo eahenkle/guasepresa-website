@@ -1,12 +1,12 @@
 import Image from "next/image";
-import { Eye, Briefcase, ShieldCheck, MapPin, Phone, MessageCircle, Mail, Clock } from "lucide-react";
+import { Eye, Briefcase, ShieldCheck, MapPin, Phone, MessageCircle, Mail, Clock, ChevronDown } from "lucide-react";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { OpsTicker } from "@/components/layout/ops-ticker";
 import { FloatActions } from "@/components/layout/float-actions";
 import { StickyMobileCta } from "@/components/layout/sticky-mobile-cta";
 import { Reveal } from "@/components/ui/reveal";
-import { HeroCanvas } from "@/components/hero/hero-canvas";
+import { RadarGraphic } from "@/components/hero/radar-graphic";
 import { ServiceCard } from "@/components/sections/service-card";
 import { ServiceMoreCard } from "@/components/sections/service-more-card";
 import { AboutBlock } from "@/components/sections/about-block";
@@ -22,10 +22,18 @@ export default function Home() {
       <main id="main">
         {/* ============ HERO ============ */}
         <section className="hero band-paper wm-dark" id="top">
+          <span className="hero-hud-corner hud-label">
+            Cobertura <span className="hud-value">Tiquisate · Escuintla</span>
+          </span>
+
           <div className="container hero-grid">
             <Reveal>
-              <h1>
-                Seguridad y vigilancia <span className="accent">en la que Guatemala confía</span>
+              <span className="eyebrow">Seguridad privada desde 2013</span>
+              <h1 className="hero-heading">
+                <span className="hero-heading__brand">Guasepresa</span>
+                <span className="hero-heading__tagline">
+                  Seguridad y vigilancia <span className="accent">en la que Guatemala confía</span>
+                </span>
               </h1>
               <p className="lede">
                 Guasepresa (Guatemala Security Premier, S.A.) protege entidades públicas y privadas en Tiquisate,
@@ -44,7 +52,7 @@ export default function Home() {
             </Reveal>
 
             <Reveal>
-              <HeroCanvas />
+              <RadarGraphic />
               <div className="fact-card">
                 <div className="fact-card__head">
                   <Image src="/assets/logo-192.png" alt="" width={44} height={44} />
@@ -74,18 +82,30 @@ export default function Home() {
               </div>
             </Reveal>
           </div>
+
+          <span className="hero-hud-year">
+            <span className="hud-label">Operando desde</span>
+            <strong>2013</strong>
+          </span>
+
+          <span className="hero-scroll-hint hud-label">
+            Desplazar
+            <ChevronDown />
+          </span>
         </section>
 
         {/* ============ STATS STRIP ============ */}
         <section className="data-band band-ink wm-camo">
           <div className="container">
             <div className="data-row">
-              <StatCounter target={12} finalText="+12" prefix="+" label="Años de experiencia" />
+              <StatCounter index="01" target={12} finalText="+12" prefix="+" label="Años de experiencia" />
               <Reveal as="div" className="data-cell">
+                <span className="data-cell__index">02</span>
                 <div className="data-cell__value">2013</div>
                 <div className="data-cell__label">Año de fundación</div>
               </Reveal>
               <Reveal as="div" className="data-cell">
+                <span className="data-cell__index">03</span>
                 <div className="data-cell__value">4.4 / 5</div>
                 <div className="data-cell__label">Calificación en Cybo</div>
               </Reveal>
@@ -132,21 +152,6 @@ export default function Home() {
                 />
               </Reveal>
             </div>
-
-            <Reveal as="div" className="case-study" style={{ marginTop: "var(--space-5)" }}>
-              <div className="case-study__badge">
-                <strong>2021</strong>
-                <span>IGSS</span>
-              </div>
-              <div>
-                <h3>Caso destacado: Instituto Guatemalteco de Seguridad Social</h3>
-                <p>
-                  Durante 2021 brindamos servicios de vigilancia en turnos de 12 horas para direcciones
-                  departamentales del IGSS, incluida la de Retalhuleu — parte de nuestro historial verificable de
-                  contratos con el sector público.
-                </p>
-              </div>
-            </Reveal>
           </div>
         </section>
 
