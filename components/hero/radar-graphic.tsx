@@ -1,11 +1,13 @@
+import Image from "next/image";
+
 export function RadarGraphic() {
   return (
     <div className="radar" role="img" aria-label="Radar de vigilancia animado">
+      <div className="radar-logo-frame">
+        <Image src="/assets/logo-512.png" alt="" fill sizes="360px" style={{ objectFit: "contain" }} />
+      </div>
       <div className="radar-crosshair" />
       <span className="radar-center" />
-      <span className="radar-blip" style={{ top: '30%', left: '64%', animationDelay: '0s' }} />
-      <span className="radar-blip" style={{ top: '60%', left: '34%', animationDelay: '0.9s' }} />
-      <span className="radar-blip" style={{ top: '40%', left: '28%', animationDelay: '1.7s' }} />
     </div>
   );
 }

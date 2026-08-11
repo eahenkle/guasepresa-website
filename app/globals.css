@@ -488,15 +488,12 @@ h1, h2, h3, h4 {
 }
 @keyframes radar-spin { to { transform: rotate(360deg); } }
 @media (prefers-reduced-motion: reduce) { .radar::after { animation: none; opacity: 0.5; } }
+.radar-logo-frame { position: absolute; inset: 7%; z-index: 0; border-radius: 50%; overflow: hidden; }
 .radar-crosshair { position: absolute; inset: 0; z-index: 1; }
 .radar-crosshair::before, .radar-crosshair::after { content: ""; position: absolute; background: rgba(237,241,231,0.14); }
 .radar-crosshair::before { left: 8%; right: 8%; top: 50%; height: 1px; }
 .radar-crosshair::after { top: 8%; bottom: 8%; left: 50%; width: 1px; }
 .radar-center { position: absolute; z-index: 2; top: 50%; left: 50%; width: 7px; height: 7px; margin: -3.5px; border-radius: 50%; background: var(--paper); box-shadow: 0 0 0 4px rgba(237,241,231,0.18); }
-.radar-blip { position: absolute; z-index: 2; width: 7px; height: 7px; border-radius: 50%; background: var(--amber-300); box-shadow: 0 0 6px rgba(251,183,93,0.7); }
-.radar-blip::after { content: ""; position: absolute; inset: -6px; border: 1px solid var(--amber-300); border-radius: 50%; animation: blip-ping 2.6s ease-out infinite; animation-delay: inherit; opacity: 0; }
-@keyframes blip-ping { 0% { transform: scale(0.5); opacity: 0.85; } 100% { transform: scale(3); opacity: 0; } }
-@media (prefers-reduced-motion: reduce) { .radar-blip::after { animation: none; display: none; } }
 
 /* Fact card — plain, no seal, no rotation */
 .fact-card {
