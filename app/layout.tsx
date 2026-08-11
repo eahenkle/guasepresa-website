@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.guasepresa.com"),
   title: "Guasepresa | Seguridad Privada en Tiquisate, Escuintla",
   description:
-    "Guasepresa (Guatemala Security Premier, S.A.) brinda servicios de vigilancia y seguridad privada para entidades públicas y privadas en Tiquisate, Escuintla y Guatemala. Más de 12 años de experiencia.",
+    "Guasepresa (Guatemala Security Premier, S.A.) brinda servicios de vigilancia y seguridad privada en Tiquisate, Escuintla y toda Guatemala. Más de 12 años de experiencia.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
@@ -33,13 +33,13 @@ export const metadata: Metadata = {
     locale: "es_GT",
     siteName: "Guasepresa",
     title: "Guasepresa | Seguridad Privada en Tiquisate, Escuintla",
-    description: "Vigilancia y seguridad privada para entidades públicas y privadas. Más de 12 años de experiencia en Guatemala.",
+    description: "Vigilancia y seguridad privada para empresas y propiedades. Más de 12 años de experiencia en Guatemala.",
     images: [{ url: "/assets/og-image.jpg", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Guasepresa | Seguridad Privada en Tiquisate, Escuintla",
-    description: "Vigilancia y seguridad privada para entidades públicas y privadas. Más de 12 años de experiencia en Guatemala.",
+    description: "Vigilancia y seguridad privada para empresas y propiedades. Más de 12 años de experiencia en Guatemala.",
     images: ["/assets/og-image.jpg"],
   },
   icons: {
@@ -57,7 +57,7 @@ const jsonLd = {
   "@type": "LocalBusiness",
   name: "Guasepresa",
   alternateName: "Guatemala Security Premier, S.A.",
-  description: "Servicios de vigilancia y seguridad privada para entidades públicas y privadas en Tiquisate, Escuintla y Guatemala.",
+  description: "Servicios de vigilancia y seguridad privada para empresas y propiedades en Tiquisate, Escuintla y toda Guatemala.",
   url: "https://www.guasepresa.com/",
   telephone: "+502-7792-7406",
   foundingDate: "2013-03-25",

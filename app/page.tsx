@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Eye, Briefcase, ShieldCheck, MapPin, Phone, MessageCircle, Mail, Clock, ChevronDown } from "lucide-react";
+import { Eye, Route, ShieldCheck, MapPin, Phone, MessageCircle, Mail, Clock, ChevronDown } from "lucide-react";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { OpsTicker } from "@/components/layout/ops-ticker";
@@ -36,9 +36,8 @@ export default function Home() {
                 </span>
               </h1>
               <p className="lede">
-                Guasepresa (Guatemala Security Premier, S.A.) protege entidades públicas y privadas en toda
-                Guatemala desde 2013, con sede en Tiquisate, Escuintla. Personal capacitado, turnos de 12 y 24
-                horas, y experiencia comprobada con instituciones del Estado.
+                Guasepresa (Guatemala Security Premier, S.A.) protege empresas y propiedades en toda Guatemala
+                desde 2013, con sede en Tiquisate, Escuintla. Personal capacitado y turnos de 12 y 24 horas.
               </p>
               <div className="hero-actions">
                 <a href="#contacto" className="btn btn-primary">
@@ -121,8 +120,8 @@ export default function Home() {
               <h2 style={{ fontSize: "clamp(26px, 3.4vw, 38px)", marginBottom: "var(--space-3)" }}>Quiénes somos</h2>
               <p className="lede">
                 Guatemala Security Premier, S.A. fue constituida en 2013 y opera bajo el código ISIC 8010,
-                actividades de seguridad privada. Con sede en Tiquisate, Escuintla, brindamos vigilancia a clientes
-                públicos y privados en toda Guatemala.
+                actividades de seguridad privada. Con sede en Tiquisate, Escuintla, brindamos vigilancia a
+                empresas y propiedades en toda Guatemala.
               </p>
             </Reveal>
 
@@ -141,8 +140,8 @@ export default function Home() {
               </Reveal>
               <Reveal as="div">
                 <AboutBlock
-                  title="Sector público"
-                  description="Experiencia comprobada con instituciones del Estado, incluido el IGSS."
+                  title="Equipo profesional"
+                  description="Agentes seleccionados, capacitados y supervisados para un servicio confiable."
                 />
               </Reveal>
               <Reveal as="div">
@@ -161,7 +160,7 @@ export default function Home() {
             <Reveal as="div" className="section-head">
               <span className="eyebrow">Servicios</span>
               <h2>Servicios de seguridad privada</h2>
-              <p>Soluciones de vigilancia para entidades públicas, empresas privadas y propiedades en toda Guatemala.</p>
+              <p>Soluciones de vigilancia para empresas privadas y propiedades en toda Guatemala.</p>
             </Reveal>
 
             <div className="services-grid">
@@ -174,9 +173,9 @@ export default function Home() {
               </Reveal>
               <Reveal as="div">
                 <ServiceCard
-                  icon={Briefcase}
-                  title="Entidades públicas"
-                  description="Vigilancia para direcciones departamentales de instituciones del Estado."
+                  icon={Route}
+                  title="Custodia y patrullaje"
+                  description="Rondas y patrullaje programado para el resguardo de instalaciones y propiedades."
                 />
               </Reveal>
               <Reveal as="div">
@@ -189,7 +188,7 @@ export default function Home() {
               <Reveal as="div">
                 <ServiceMoreCard
                   title="Más servicios"
-                  items={["Custodia y patrullaje", "Seguridad para eventos", "Respuesta y supervisión"]}
+                  items={["Seguridad residencial", "Seguridad para eventos", "Respuesta y supervisión"]}
                   href="#contacto"
                   linkLabel="Consultar disponibilidad"
                 />

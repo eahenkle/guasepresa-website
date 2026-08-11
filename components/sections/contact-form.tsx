@@ -90,9 +90,9 @@ export function ContactForm() {
         <label htmlFor="service">Servicio de interés</label>
         <select id="service" name="service" defaultValue="Vigilancia física">
           <option value="Vigilancia física">Vigilancia física</option>
-          <option value="Seguridad para entidades públicas">Seguridad para entidades públicas</option>
           <option value="Seguridad corporativa">Seguridad corporativa</option>
           <option value="Custodia y patrullaje">Custodia y patrullaje</option>
+          <option value="Seguridad residencial">Seguridad residencial</option>
           <option value="Seguridad para eventos">Seguridad para eventos</option>
           <option value="Otro">Otro</option>
         </select>

@@ -2,7 +2,7 @@ const ITEMS = [
   { icon: true, text: "Estado del servicio: ", strong: "Operativo" },
   { text: "Base en Tiquisate, Escuintla" },
   { text: "Vigilancia 24/7" },
-  { text: "Cliente institucional: ", strong: "IGSS" },
+  { text: "Cobertura: ", strong: "Nacional" },
   { text: "Operando desde 2013" },
   { text: "Calificación Cybo: ", strong: "4.4 / 5" },
 ];
