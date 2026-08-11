@@ -23,7 +23,7 @@ export default function Home() {
         {/* ============ HERO ============ */}
         <section className="hero band-paper wm-dark" id="top">
           <span className="hero-hud-corner hud-label">
-            Cobertura <span className="hud-value">Tiquisate · Escuintla</span>
+            Cobertura <span className="hud-value">Guatemala</span>
           </span>
 
           <div className="container hero-grid">
@@ -36,9 +36,9 @@ export default function Home() {
                 </span>
               </h1>
               <p className="lede">
-                Guasepresa (Guatemala Security Premier, S.A.) protege entidades públicas y privadas en Tiquisate,
-                Escuintla desde 2013. Personal capacitado, turnos de 12 y 24 horas, y experiencia comprobada con
-                instituciones del Estado.
+                Guasepresa (Guatemala Security Premier, S.A.) protege entidades públicas y privadas en toda
+                Guatemala desde 2013, con sede en Tiquisate, Escuintla. Personal capacitado, turnos de 12 y 24
+                horas, y experiencia comprobada con instituciones del Estado.
               </p>
               <div className="hero-actions">
                 <a href="#contacto" className="btn btn-primary">
@@ -122,7 +122,7 @@ export default function Home() {
               <p className="lede">
                 Guatemala Security Premier, S.A. fue constituida en 2013 y opera bajo el código ISIC 8010,
                 actividades de seguridad privada. Con sede en Tiquisate, Escuintla, brindamos vigilancia a clientes
-                públicos y privados en toda la región.
+                públicos y privados en toda Guatemala.
               </p>
             </Reveal>
 
@@ -147,8 +147,8 @@ export default function Home() {
               </Reveal>
               <Reveal as="div">
                 <AboutBlock
-                  title="Cobertura regional"
-                  description="Presencia en Tiquisate, Escuintla y Retalhuleu, con alcance nacional bajo solicitud."
+                  title="Cobertura nacional"
+                  description="Sede en Tiquisate, Escuintla, con operaciones y cobertura en todo el territorio de Guatemala."
                 />
               </Reveal>
             </div>
@@ -161,7 +161,7 @@ export default function Home() {
             <Reveal as="div" className="section-head">
               <span className="eyebrow">Servicios</span>
               <h2>Servicios de seguridad privada</h2>
-              <p>Soluciones de vigilancia para entidades públicas, empresas privadas y propiedades en Escuintla y sus alrededores.</p>
+              <p>Soluciones de vigilancia para entidades públicas, empresas privadas y propiedades en toda Guatemala.</p>
             </Reveal>
 
             <div className="services-grid">
